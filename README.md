@@ -7,11 +7,12 @@
     <br />
   </h1>
   <sup>
-    <h3>Demo</h3>
     <p><em>A modern blog sharing platform with AI-powered summarization.</em></p>
   </sup>
   <br />
 </div>
+
+[![Watch the video](https://img.youtube.com/vi/kygG7wbSY3s/0.jpg)](https://www.youtube.com/watch?v=kygG7wbSY3s)
 
 ## ✨ Features
 
