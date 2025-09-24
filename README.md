@@ -1,34 +1,127 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <br />
+  <h1>
+    📝
+    <br />
+    BlogSphere
+    <br />
+  </h1>
+  <sup>
+    <h3>Demo</h3>
+    <p><em>A modern blog sharing platform with AI-powered summarization.</em></p>
+  </sup>
+  <br />
+</div>
 
-## Getting Started
+## ✨ Features
 
-First, run the development server:
+*   **User Authentication**: Secure sign-up and login functionality using JWT.
+*   **Create & Share Blogs**: Authenticated users can create, publish, and share their blog posts.
+*   **Interactive Dashboard**: A clean, modern dashboard to view all blog posts from different users.
+*   **AI-Powered Summarization**: Instantly get a concise summary of any blog post with a single click.
+*   **Search & Sort**: Easily find blogs by author or title, and sort them by date or upvotes.
+*   **Beautiful UI**: A sleek and responsive user interface built with Next.js and Tailwind CSS.
+
+## 🚀 Tech Stack
+
+**Frontend:**
+*   Next.js
+*   React
+*   Tailwind CSS
+*   Axios
+
+**Backend:**
+*   Node.js
+*   Express.js
+*   PostgreSQL
+*   JWT (JSON Web Tokens) for authentication
+*   Integration with an AI service for summarization
+
+## 🏁 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+*   Node.js (v18 or later)
+*   npm or yarn
+*   PostgreSQL installed and running
+
+### 1. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Backend Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Navigate to the backend directory
+cd server
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Install dependencies
+npm install
 
-## Learn More
+# Create a .env file and add your environment variables
+touch .env
+```
 
-To learn more about Next.js, take a look at the following resources:
+Your backend `.env` file should look like this:
+```env
+DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE"
+JWT_SECRET="your_jwt_secret"
+AI_API_KEY="your_ai_service_api_key"
+PORT=5000
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Database Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1.  Make sure your PostgreSQL server is running.
+2.  Create a new database for the project.
+3.  Run the database migrations (if you have a migration script):
+    ```bash
+    # Example command
+    npm run migrate
+    ```
 
-## Deploy on Vercel
+### 4. Frontend Setup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Navigate to the frontend directory (from the root)
+cd login-app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Install dependencies
+npm install
+```
+
+### 5. Running the Application
+
+1.  **Start the backend server:**
+    ```bash
+    # From the /server directory
+    npm start
+    ```
+    The backend will be running on `http://localhost:5000`.
+
+2.  **Start the frontend development server:**
+    ```bash
+    # From the /login-app directory
+    npm run dev
+    ```
+    Open http://localhost:3000 with your browser to see the result.
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
